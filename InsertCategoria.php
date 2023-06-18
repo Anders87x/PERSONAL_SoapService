@@ -44,7 +44,30 @@ $server->register(
     "Inserta una categoria"
 );
 
+$server->register(
+    "InsertCategoriaService2",
+    array("InsertCategoria" => "tns:InsertCategoria"),
+    array("InsertCategoria" => "tns:response"),
+    $namespace,
+    false,
+    "rpc",
+    "encoded",
+    "Inserta una categoria"
+);
+
 function InsertCategoriaService($request){
+    require_once "config/conexion.php";
+    require_once "models/Usuario.php";
+
+    $usuario = new Usuario();
+    $usuario->insert_usuario($request["usu_nom"],$request["usu_ape"],$request["usu_correo"]);
+
+    return array(
+        "Resultado" => true
+    );
+}
+
+function InsertCategoriaService2($request){
     require_once "config/conexion.php";
     require_once "models/Usuario.php";
 
