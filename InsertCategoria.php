@@ -44,6 +44,7 @@ $server->register(
     "Inserta una categoria"
 );
 
+
 function InsertCategoriaService($request){
     require_once "config/conexion.php";
     require_once "models/Usuario.php";
@@ -55,6 +56,7 @@ function InsertCategoriaService($request){
         "Resultado" => true
     );
 }
+
 
 $POST_DATA = file_get_contents("php://input");
 $server->service($POST_DATA);

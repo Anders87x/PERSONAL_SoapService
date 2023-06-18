@@ -1,5 +1,5 @@
 <?php
-$location = "http://localhost:90/PERSONAL_SOAPSERVICE/InsertCategoria.php?wsdl";
+$location = "http://127.0.0.1:8080/SoapService/InsertCategoria.php?wsdl";
 
 $request= "
 <soapenv:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ins=\"InsertCategoriaSOAP\">

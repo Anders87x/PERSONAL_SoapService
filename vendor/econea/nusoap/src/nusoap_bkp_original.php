@@ -5594,7 +5594,7 @@ class wsdl extends nusoap_base
 		</head>
 		<body>
 		<div class=content>
-        
+			<br><br>
 			<div class=title>' . $this->serviceName . '</div>
 			<div class=nav>
 				<p>View the <a href="' . $PHP_SELF . '?wsdl">WSDL</a> for the service.
