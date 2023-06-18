@@ -8,9 +8,9 @@ $request= "
       <ins:InsertCategoriaService soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">
          <InsertCategoria xsi:type=\"ins:InsertCategoria\">
             <!--You may enter the following 3 items in any order-->
-            <usu_nom xsi:type=\"xsd:string\">dd</usu_nom>
-            <usu_ape xsi:type=\"xsd:string\">dd</usu_ape>
-            <usu_correo xsi:type=\"xsd:string\">dd@andercode.com</usu_correo>
+            <usu_nom xsi:type=\"xsd:string\">AnderCode</usu_nom>
+            <usu_ape xsi:type=\"xsd:string\">Anderson</usu_ape>
+            <usu_correo xsi:type=\"xsd:string\">ander@andercode.com</usu_correo>
          </InsertCategoria>
       </ins:InsertCategoriaService>
    </soapenv:Body>
